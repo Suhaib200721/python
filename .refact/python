@@ -1,3 +1,93 @@
 a=int(input("Enter the number"))
 b=int(input("Enter the Number"))
 print(a*b)
+
+# ==========================
+# Program 1 - Largest Number
+# ==========================
+
+print("===== Largest Number =====")
+
+s = 20
+m = 40
+n = 70
+
+if s > m and s > n:
+    print("Largest number is:", s)
+elif m > s and m > n:
+    print("Largest number is:", m)
+else:
+    print("Largest number is:", n)
+
+
+# ===============================
+# Program 2 - Arithmetic Operations
+# ===============================
+
+print("\n===== Arithmetic Operations =====")
+
+a = int(input("Enter First Number: "))
+b = int(input("Enter Second Number: "))
+
+print("Addition =", a + b)
+print("Subtraction =", a - b)
+print("Multiplication =", a * b)
+print("Division =", a / b)
+print("Floor Division =", a // b)
+print("Modulus =", a % b)
+
+
+# ==================================
+# Program 3 - Quotient & Remainder
+# ==================================
+
+print("\n===== Quotient and Remainder =====")
+
+a = 70
+b = 6
+
+quotient = a // b
+remainder = a % b
+
+print("Without Decimal")
+print("Quotient =", quotient)
+print("Remainder =", remainder)
+
+decimal_quotient = a / b
+
+print("\nWith Decimal")
+print("Quotient =", decimal_quotient)
+
+
+# ==========================
+# Program 4 - Reverse Number
+# ==========================
+
+print("\n===== Reverse Number =====")
+
+n = int(input("Enter a Number: "))
+
+reverse = 0
+
+while n > 0:
+    digit = n % 10
+    reverse = reverse * 10 + digit
+    n = n // 10
+
+print("Reversed Number =", reverse)
+
+
+# =====================
+# Program 5 - Factorial
+# =====================
+
+print("\n===== Factorial =====")
+
+n = int(input("Enter a Number: "))
+
+fact = 1
+
+for i in range(1, n + 1):
+    fact = fact * i
+
+print("Factorial =", fact)
