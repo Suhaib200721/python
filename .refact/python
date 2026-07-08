@@ -1,93 +1,101 @@
-a=int(input("Enter the number"))
-b=int(input("Enter the Number"))
-print(a*b)
+# ==============================
+# 10 Python Programs
+# ==============================
 
-# ==========================
-# Program 1 - Largest Number
-# ==========================
+# Program 1 - Hello World
+print("Program 1")
+print("Hello, World!")
 
-print("===== Largest Number =====")
+# ------------------------------
 
-s = 20
-m = 40
-n = 70
+# Program 2 - Addition
+print("\nProgram 2")
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print("Sum =", a + b)
 
-if s > m and s > n:
-    print("Largest number is:", s)
-elif m > s and m > n:
-    print("Largest number is:", m)
+# ------------------------------
+
+# Program 3 - Even or Odd
+print("\nProgram 3")
+n = int(input("Enter a number: "))
+if n % 2 == 0:
+    print("Even")
 else:
-    print("Largest number is:", n)
+    print("Odd")
 
+# ------------------------------
 
-# ===============================
-# Program 2 - Arithmetic Operations
-# ===============================
+# Program 4 - Largest Number
+print("\nProgram 4")
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+if a > b:
+    print("Largest =", a)
+else:
+    print("Largest =", b)
 
-print("\n===== Arithmetic Operations =====")
+# ------------------------------
 
-a = int(input("Enter First Number: "))
-b = int(input("Enter Second Number: "))
+# Program 5 - Factorial
+print("\nProgram 5")
+n = int(input("Enter a number: "))
+fact = 1
+for i in range(1, n + 1):
+    fact *= i
+print("Factorial =", fact)
 
+# ------------------------------
+
+# Program 6 - Prime Number
+print("\nProgram 6")
+n = int(input("Enter a number: "))
+if n > 1:
+    for i in range(2, n):
+        if n % i == 0:
+            print("Not Prime")
+            break
+    else:
+        print("Prime")
+else:
+    print("Not Prime")
+
+# ------------------------------
+
+# Program 7 - Fibonacci
+print("\nProgram 7")
+n = int(input("Enter number of terms: "))
+a, b = 0, 1
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+print()
+
+# ------------------------------
+
+# Program 8 - Palindrome
+print("\nProgram 8")
+text = input("Enter a string: ")
+if text == text[::-1]:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+# ------------------------------
+
+# Program 9 - Calculator
+print("\nProgram 9")
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
 print("Addition =", a + b)
 print("Subtraction =", a - b)
 print("Multiplication =", a * b)
 print("Division =", a / b)
-print("Floor Division =", a // b)
-print("Modulus =", a % b)
 
+# ------------------------------
 
-# ==================================
-# Program 3 - Quotient & Remainder
-# ==================================
-
-print("\n===== Quotient and Remainder =====")
-
-a = 70
-b = 6
-
-quotient = a // b
-remainder = a % b
-
-print("Without Decimal")
-print("Quotient =", quotient)
-print("Remainder =", remainder)
-
-decimal_quotient = a / b
-
-print("\nWith Decimal")
-print("Quotient =", decimal_quotient)
-
-
-# ==========================
-# Program 4 - Reverse Number
-# ==========================
-
-print("\n===== Reverse Number =====")
-
-n = int(input("Enter a Number: "))
-
-reverse = 0
-
-while n > 0:
-    digit = n % 10
-    reverse = reverse * 10 + digit
-    n = n // 10
-
-print("Reversed Number =", reverse)
-
-
-# =====================
-# Program 5 - Factorial
-# =====================
-
-print("\n===== Factorial =====")
-
-n = int(input("Enter a Number: "))
-
-fact = 1
-
-for i in range(1, n + 1):
-    fact = fact * i
-
-print("Factorial =", fact)
+# Program 10 - Star Pattern
+print("\nProgram 10")
+rows = int(input("Enter number of rows: "))
+for i in range(1, rows + 1):
+    print("*" * i)
